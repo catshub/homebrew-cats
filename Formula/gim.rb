@@ -2,13 +2,13 @@ class Gim < Formula
   desc ".gitignore manager"
   homepage "https://github.com/catshub/gim"
   url "https://github.com/catshub/gim/archive/v0.1.0.tar.gz"
-  sha256 "2a6dc75589d738fc97ba46fd07e8499b36fb05f1aa602742b8dec18f0eba3d7d"
+  sha256 "173b9bf08c346e5836f2c14be559aeba09d32b99c0b3304d1966e56a1dc4e63e"
 
   # depends_on "cmake" => :build
 
   def install
     system './install.sh'
-    bin.install "bin/gim"
+    bin.install "./bin/gim"
   end
 
   test do
